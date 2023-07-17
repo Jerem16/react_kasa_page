@@ -1,0 +1,62 @@
+/****** [ Animation ] ******/
+@keyframes filterStart {
+    0% {
+        background-color: $color-secondary;
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+}
+@keyframes textStart {
+    0% {
+        color: $color-secondary;
+    }
+    100% {
+        color: white;
+    }
+}
+
+@keyframes footerStart {
+    0% {
+        opacity: 0;
+        background-color: transparent;
+    }
+    100% {
+        opacity: 1;
+        height: 190px;
+        background-color: black;
+    }
+}
+@keyframes footerStart5 {
+    0% {
+        opacity: 0.2;
+    }
+    22% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes cardStart {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes homeAnime {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}

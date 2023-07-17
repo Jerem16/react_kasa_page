@@ -1,0 +1,22 @@
+.error-404 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    .error-404_h1 {
+        display: block;
+        margin: 51px 0 62px 0;
+        font-size: 289px;
+        font-weight: 700;
+    }
+    .error-404_p {
+        display: block;
+        font-size: 36px;
+    }
+    .error-404_a {
+        display: block;
+        font-size: 18px;
+        text-decoration: underline;
+        margin: 109px 0 62px 0;
+    }
+}

@@ -1,0 +1,111 @@
+/****** [ Logement ] ******/
+.logement_card-layout {
+    @include flexRowSB;
+    flex-wrap: nowrap;
+    .logement_card {
+        width: calc(60% - 100px);
+        min-width: 460px;
+        flex: 1 auto;
+        .logement_card-title {
+            position: relative;
+            top: 25px;
+            margin: 0;
+            font-size: 32px;
+            letter-spacing: 0.2px;
+        }
+        .logement_card-location {
+            margin: 30px 0 4.5px 0;
+            letter-spacing: 0.2px;
+        }
+
+        .logement_card-tags {
+            list-style: none;
+            padding: 0;
+            display: inline-flex;
+            gap: 10px;
+        }
+        .logement_card-tags li {
+            font-size: 12px;
+            display: block;
+            padding: 4px 12px;
+            @include collapseTags;
+            min-width: 100px;
+            text-align: center;
+        }
+    }
+    
+}
+
+.logement_collapse-layout {
+    margin: 5px 0 15px 0;
+    @include flexRowSB;
+    .logement_collapse {
+        width: 47.5%;
+    }
+}
+
+// @media screen and (max-width: 375px) {
+//     .logement_card-layout {
+//         flex-wrap: wrap;
+//         .logement_card {
+//             width: 100%;
+//             min-width: 100%;
+
+//             .logement_card-title {
+//                 letter-spacing: 0px;
+//                 font-size: 18px;
+//                 top: 8px;
+//                 line-height: 26px;
+//             }
+//             .logement_card-location {
+//                 margin: 16px 0 0px 0;
+//                 letter-spacing: 0px;
+//                 font-size: 14px;
+//             }
+//             .logement_card-tags {
+//                 margin-top: 12px;
+//             }
+//             .logement_card-tags li {
+//                 font-size: 9px;
+//                 padding: 3.75px 12px;
+//                 min-width: auto;
+//             }
+//         }
+//         .logement_host {
+//             justify-content: flex-end;
+
+//             width: 100%;
+//             padding: 0;
+//             margin: 1px 0 10px 0;
+
+//             .logement_host-title {
+//                 width: 50%;
+//                 font-size: 12px;
+//                 align-self: flex-start;
+//                 text-align: right;
+//                 margin: 0px 10px 0 0;
+//             }
+//             .logement_host-img {
+//                 width: 32px;
+//             }
+//             .star {
+//                 width: 100px;
+//                 text-align: left;
+//                 font-size: 13px;
+//                 letter-spacing: 5px;
+//                 order: -1;
+//                 left: -23px;
+//                 align-self: center;
+//             }
+//         }
+//     }
+
+//     .logement_collapse-layout {
+//         margin: 5px 0 15px 0;
+//         display: flex;
+//         gap: 20px;
+//         .logement_collapse {
+//             width: 100%;
+//         }
+//     }
+// }

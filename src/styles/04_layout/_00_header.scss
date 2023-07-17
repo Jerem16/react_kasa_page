@@ -1,0 +1,28 @@
+/****** [Header] ******/
+.header {
+    @include flexRowSB;
+    align-items: center;
+    @include width_size;
+    box-sizing: border-box;
+    padding: 40px 0px 48px 0;
+    .header_logo {
+        display: block;
+        object-fit: contain;
+        height: 62px;
+    }
+    .header_nav {
+        display: inline-block;
+        a {
+            position: relative;
+            top: 2.5px;
+            left: 2px;
+            margin-left: 59px;
+            font-size: 22px;
+            &.active {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+

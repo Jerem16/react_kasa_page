@@ -1,0 +1,31 @@
+.logement_host {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    width: calc(40% - 100px);
+    flex: 1 auto;
+    box-sizing: border-box;
+    padding: 16px 18px 0 0;
+    min-width: 199px;
+    .logement_host-title {
+        width: 50%;
+        font-size: 16px;
+        align-self: flex-start;
+        text-align: right;
+        margin: 10px 10px 0 0;
+    }
+    .logement_host-img {
+        border-radius: 50%;
+        width: 58px;
+        max-width: 58px;
+        max-height: 58px;
+    }
+    .star {
+        width: 100%;
+        text-align: right;
+        font-size: 22px;
+        letter-spacing: 10.95px;
+        position: relative;
+        left: 8px;
+    }
+}

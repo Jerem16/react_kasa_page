@@ -1,0 +1,17 @@
+/************--Loader--************/
+.about_collapse-layout {
+    display: flex;
+    flex-flow: column;
+    padding: 0 100px;
+    margin: 22px 0 -10px 0;
+    row-gap: 29.5px;
+
+    .about_collapse {
+        position: relative;
+        margin: 0 0 0 0;
+        padding: 0;
+        max-height: auto;
+        min-height: 20px;
+    }
+}
+

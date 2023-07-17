@@ -1,0 +1,31 @@
+.BannerCard {
+    position: relative;
+    top: -15px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    @include bannerCard;
+    .BannerImage {
+        object-fit: cover;
+        @include bannerCard;
+        // position: relative;
+    }
+    .BannerFilter {
+        position: absolute;
+        @include bannerCard;
+        background-color: rgb(0, 0, 0, 0.25);
+        animation: filterStart 1.9s ease-in-out;
+        //animation-fill-mode: forwards;
+    }
+    .BannerText {
+        position: absolute;
+        display: inline-block;
+        margin: 5px 0 0 11px;
+        color: white;
+        font-size: 44px;
+        animation: textStart 1.9s ease-in-out;
+        letter-spacing: 0.1px;
+    }
+}
+

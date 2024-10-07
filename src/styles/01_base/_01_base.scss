@@ -5,6 +5,7 @@
     font-weight: 500;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
 }
 
 html {
@@ -18,14 +19,35 @@ body {
     margin: 0 auto;
     padding: 0 150px;
     overflow-x: hidden;
-    overflow-y: visible;
+    overflow-y: hidden;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     color: $color-primary;
     @include width_size;
-    // height: auto;
+    width: 100vw;
+    height: 100%;
+}
+body.home {
+    overflow-y: scroll;
+}
+@keyframes cardStart {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
+body.intro {
+    animation: cardStart 0.85s ease-in-out;
+}
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
@@ -47,4 +69,3 @@ a:visited {
     color: $color-primary;
     text-decoration: none;
 }
-

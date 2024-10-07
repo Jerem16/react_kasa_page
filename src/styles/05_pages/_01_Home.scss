@@ -1,14 +1,15 @@
 .home_card-list {
     @include width_size;
     @include flexRowSB;
+    height: auto;
     align-items: center;
     background-color: $color-secondary;
-    margin: 25px 0 230px 0;
+    margin: 25px 0 50px 0;
     padding: 50px;
     box-sizing: border-box;
     border-radius: 20px;
     row-gap: 50px;
-    animation: homeAnime 0.5s;
+    animation: homeAnime 0.85s;
     .home_card {
         position: relative;
         display: block;

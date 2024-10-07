@@ -6,7 +6,7 @@ import Header from "./components/Header/header";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Logement from "./pages/Logement/Logement";
-import Error from "./pages/Error/Error";
+import Error404 from "./pages/Error404/Error404";
 
 import Footer from "./components/Footer/Footer";
 
@@ -21,7 +21,7 @@ function App() {
                     path="/react_kasa_page/logement/:id"
                     element={<Logement />}
                 />
-                <Route path="*" element={<Error />} />
+                <Route path="*" element={<Error404 />} />
             </Routes>
             <Footer />
         </>

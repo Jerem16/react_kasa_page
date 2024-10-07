@@ -1,6 +1,7 @@
 @media screen and (max-width: 668px) {
     body {
         padding: 0 25px;
+        overflow-y: scroll;
     }
     .BannerCard {
         .BannerText {
@@ -26,6 +27,49 @@
     }
 }
 
+@media screen and (max-width: 430px) {
+    footer {
+        position: absolute;
+        bottom: auto;
+        width: 100vw;
+        height: 100%;
+        margin-top: 37px;
+
+        .footer {
+            height: 210px;
+            margin: auto;
+            .footer_logo {
+                position: relative;
+                top: 0;
+                height: 40px;
+                padding: 0px 0 0px 0;
+            }
+            .footer_nav-a {
+                position: relative;
+                display: inline-block;
+                font-size: 12px;
+                width: 100px;
+                top: -22px;
+                line-height: 18px;
+                letter-spacing: 0.15px;
+                text-align: center;
+            }
+        }
+    }
+    .intro {
+        footer {
+            position: absolute;
+            bottom: inherit;
+            height: 210px !important;
+        }
+    }
+    .show {
+        footer {
+            bottom: inherit;
+        }
+    }
+}
+
 @media screen and (max-width: 375px) {
     body {
         padding: 0 20px;
@@ -40,12 +84,8 @@
         .header_nav {
             display: inline-block;
             a {
-                top: -1px;
-                left: 0px;
                 margin-left: 27px;
                 font-size: 12px;
-                font-weight: 400;
-                text-transform: uppercase;
             }
         }
     }
@@ -71,12 +111,10 @@
             width: 67%;
         }
     }
-    /* bannerCard Image sur about */
     #about-bannerImage {
         max-height: 500px;
         @include bannerID;
         top: -1px;
-
         .BannerImage {
             @include bannerID;
         }
@@ -88,7 +126,7 @@
     .home_card-list {
         gap: 20px;
         background-color: transparent;
-        margin: 29.5px 0 230px 0;
+        margin: 29.5px 0 0px 0;
         padding: 0;
         .home_card {
             width: 100%;
@@ -99,26 +137,21 @@
     .slideshow {
         top: 1px;
         height: 262px;
-
         .slideshow-slide {
             img {
                 min-height: 262px;
                 border-radius: 10px;
             }
         }
-
         .slideshow-arrow-left {
             left: 2.5px;
         }
-
         .slideshow-arrow-right {
             right: 2.5px;
         }
-
         i {
             font-size: 20px;
         }
-
         .slide-number {
             color: transparent;
         }
@@ -128,7 +161,6 @@
         .logement_card {
             width: 100%;
             min-width: 100%;
-
             .logement_card-title {
                 letter-spacing: 0px;
                 font-size: 18px;
@@ -151,11 +183,9 @@
         }
         .logement_host {
             justify-content: flex-end;
-
             width: 100%;
             padding: 0;
             margin: 1px 0 10px 0;
-
             .logement_host-title {
                 width: 50%;
                 font-size: 12px;
@@ -184,14 +214,6 @@
         gap: 20px;
         .logement_collapse {
             width: 100%;
-        }
-    }
-    .collapse {
-        font-size: 13px;
-        height: 30px;
-        top: -3px;
-        i {
-            font-size: 18px;
         }
     }
 
@@ -240,31 +262,8 @@
             margin: 98px 0 62px 0;
         }
     }
-
-    footer {
-        position: relative;
-        bottom: auto;
-        .footer {
-            height: 200px;
-
-            .footer_logo {
-                height: 40px;
-                padding: 40px 0 34px 0;
-            }
-            .footer_nav-a {
-                position: relative;
-                display: inline-block;
-                font-size: 12px;
-                width: 100px;
-                top: -22px;
-                left: 4px;
-                line-height: 18px;
-                letter-spacing: 0.15px;
-                text-align: center;
-            }
-        }
-    }
 }
+
 @media screen and (max-width: 360px) {
     body {
         padding: 0 10px;
@@ -288,11 +287,9 @@
             font-size: 22px;
         }
     }
-    /* bannerCard Image sur about */
     #about-bannerImage {
         @include bannerID;
         top: -1px;
-
         .BannerImage {
             @include bannerID;
         }
@@ -335,22 +332,15 @@
         }
     }
     footer {
-        position: relative;
-        bottom: auto;
         .footer {
             height: 200px;
-
             .footer_logo {
                 height: 40px;
-                padding: 40px 0 34px 0;
             }
             .footer_nav-a {
-                position: relative;
                 display: inline-block;
                 font-size: 12px;
                 width: 100px;
-                top: -22px;
-                left: 4px;
                 line-height: 18px;
                 letter-spacing: 0.15px;
                 text-align: center;
@@ -358,6 +348,7 @@
         }
     }
 }
+
 @media screen and (max-width: 340px) {
     @mixin width_size {
         min-width: 280px;

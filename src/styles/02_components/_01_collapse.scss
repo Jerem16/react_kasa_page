@@ -59,7 +59,7 @@
         margin: 0 0 0 0;
     }
     &.opened {
-        height: auto;
+        height: calc(100% - 20px);
         padding: 30px 20px 20px 20px;
         margin: 0 0 -15px 0;
     }

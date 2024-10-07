@@ -1,13 +1,15 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import accommodations from "../../data/logements.json";
-import Error from "../../pages/Error/Error";
+import Error404 from "../Error404/Error404";
 import Collapse from "../../components/Collapse/Collapse";
 import Carousel from "../../components/Carousel/Carousel";
 import HostCard from "../../components/LodgingHost/LodgingHost";
 import "../../styles/main.scss";
+import useBodyClass from "../useBodyClass";
 
 function Logement() {
+    useBodyClass("home");
     const { id } = useParams();
 
     const logement = accommodations.find(
@@ -15,13 +17,13 @@ function Logement() {
     );
 
     if (!logement) {
-        return <Error />;
+        return <Error404 />;
     }
 
     const rating = parseInt(logement.rating, 10);
 
     return (
-        <>
+        <main>
             <Carousel images={logement.pictures} />
             <div className="logement_card-layout">
                 <article className="logement_card">
@@ -55,7 +57,7 @@ function Logement() {
                     }
                 />
             </div>
-        </>
+        </main>
     );
 }
 

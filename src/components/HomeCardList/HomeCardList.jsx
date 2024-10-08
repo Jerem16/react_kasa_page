@@ -20,7 +20,7 @@ const HomeCardList = () => {
             {delayedLocations.map((location, index) => (
                 <Link
                     key={location.id}
-                    to={`/logement/${location.id}`}
+                    to={`/react_kasa_page/logement/${location.id}`}
                     className="home_card"
                     style={{ animationDelay: `${index * 175}ms` }}
                 >

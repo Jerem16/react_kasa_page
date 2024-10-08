@@ -9,7 +9,7 @@ function Error404() {
             <p className="error-404_p">
                 Oups! La page que <span>vous demandez n'existe pas.</span>
             </p>
-            <Link to="/" className="error-404_a">
+            <Link to="/react_kasa_page" className="error-404_a">
                 Retourner sur la page d’accueil
             </Link>
         </div>

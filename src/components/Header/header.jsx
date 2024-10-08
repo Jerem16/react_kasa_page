@@ -19,14 +19,14 @@ function Header() {
 
     return (
         <header className="header">
-            <Link to="/">
+            <Link to="/react_kasa_page">
                 <img src={logo} alt="logo" className="header_logo" />
             </Link>
             <nav className="header_nav">
-                <Link to="/" className="nav_link">
+                <Link to="/react_kasa_page" className="nav_link">
                     Accueil
                 </Link>
-                <Link to="/a_propos" className="nav_link">
+                <Link to="/react_kasa_page/a_propos" className="nav_link">
                     A Propos
                 </Link>
             </nav>

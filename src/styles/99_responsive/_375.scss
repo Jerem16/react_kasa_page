@@ -25,12 +25,64 @@
             }
         }
     }
+    .about_collapse-layout {
+        padding: 0;
+    }
+    footer {
+        position: relative;
+        z-index: 2;
+        bottom: 0;
+        width: 100vw;
+        // height: 100%;
+        height: 210px !important;
+
+        margin-top: 37px;
+        .footer {
+            height: 210px;
+            margin: auto;
+            animation: none;
+            .footer_logo {
+                position: relative;
+                top: 0;
+                height: 40px;
+                padding: 0px 0 0px 0;
+            }
+            .footer_nav-a {
+                position: relative;
+                display: inline-block;
+                font-size: 12px;
+                width: 100px;
+                top: -22px;
+                line-height: 18px;
+                letter-spacing: 0.15px;
+                text-align: center;
+            }
+        }
+    }
+    .intro {
+        footer {
+            position: fixed;
+            // left: 0;
+            // width: 100vw;
+        }
+    }
+    .show {
+        footer {
+            // animation: none;
+        }
+    }
+    .home footer {
+        position: relative;
+        left: -25px;
+        height: 210px !important;
+        animation: none;
+        animation: none;
+        animation: footerStart5 5.8s ease-out forwards;
+    }
 }
 
 @media screen and (max-width: 430px) {
     footer {
-        position: absolute;
-        bottom: auto;
         width: 100vw;
         height: 100%;
         margin-top: 37px;
@@ -58,25 +110,12 @@
     }
     .intro {
         footer {
-            position: absolute;
-            bottom: inherit;
             height: 210px !important;
-        }
-    }
-    .show {
-        main {
-            position: inherit;
-            height: inherit;
-            margin-bottom: 0px;
-        }
-        footer {
-            position: absolute;
-            bottom: inherit;
         }
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
     body {
         padding: 0 20px;
         background-color: white;

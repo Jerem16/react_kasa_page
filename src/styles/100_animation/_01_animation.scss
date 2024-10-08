@@ -17,7 +17,21 @@
         // opacity: 1;
     }
 }
-
+@keyframes footerStart1 {
+    0% {
+        opacity: 1;
+        transform: translateY(100%); /* Commence en dehors de l'écran, en bas */
+        background-color: black;
+        transform-origin: bottom; /* La transformation commence du bas */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Arrive à sa position finale */
+        // height: 190px; /* Ajuste la hauteur finale de l'élément */
+        background-color: black;
+        transform-origin: bottom;
+    }
+}
 @keyframes footerStart {
     0% {
         opacity: 0;

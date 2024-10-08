@@ -18,7 +18,7 @@ const useBodyClass = (className) => {
             setTimeout(() => {
                 body.classList.remove("intro");
                 body.classList.add("show");
-            }, 1900);
+            }, 760);
         }
 
         return () => {

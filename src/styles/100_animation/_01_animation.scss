@@ -10,9 +10,11 @@
 @keyframes textStart {
     0% {
         color: $color-secondary;
+        // opacity: 0.25;
     }
     100% {
         color: white;
+        // opacity: 1;
     }
 }
 
@@ -23,6 +25,7 @@
     }
     50% {
         opacity: 0;
+        height: 0px;
         background-color: transparent;
     }
     100% {

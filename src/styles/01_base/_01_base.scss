@@ -14,19 +14,22 @@ html {
     font-size: 16px;
     background: #fff;
 }
-
+// #root {
+//     position: absolute;
+// }
 body {
     margin: 0 auto;
     padding: 0 150px;
     overflow-x: hidden;
-    overflow-y: hidden;
+    // overflow-y: hidden;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     color: $color-primary;
     @include width_size;
     width: 100vw;
-    height: 100%;
+    // height: 100%;
 }
+
 body.home {
     overflow-y: scroll;
 }

@@ -64,7 +64,13 @@
         }
     }
     .show {
+        main {
+            position: inherit;
+            height: inherit;
+            margin-bottom: 0px;
+        }
         footer {
+            position: absolute;
             bottom: inherit;
         }
     }

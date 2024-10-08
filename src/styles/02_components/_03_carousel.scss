@@ -35,9 +35,13 @@
     i {
         color: $color-white;
         font-size: 90px;
-        @include drop-shadow(#000);
+        @include drop-shadow(rgba(0, 0, 0, 0.1));
         opacity: 0.85;
+        &:hover  {
+            @include drop-shadow(rgba(0, 0, 0, 0.25));
+        }
     }
+    
 
     .slide-number {
         position: absolute;

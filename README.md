@@ -1,4 +1,22 @@
-# Getting Started with Create React App
+# Utile GitBash !!!
+
+nvm install 16.13.2
+
+nvm use 16.13.2
+
+node --version
+
+git --version
+
+npm i
+
+npm audit fix --force
+
+git remote add origin https://github.com/{username}/{repo-name}.git
+
+git remote add origin https://github.com/Jerem16/react_kasa_page.git
+
+npm run deploy
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -15,7 +15,7 @@ function App() {
         <>
             <Header />
             <Routes>
-                <Route path="/react_kasa_page" element={<Home />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/react_kasa_page/a_propos" element={<About />} />
                 <Route
                     path="/react_kasa_page/logement/:id"

@@ -10,6 +10,8 @@ git --version
 
 npm i
 
+$ git remote add origin https://github.com/Jerem16/react_kasa_page.git
+
 npm run deploy -- -m "Deploy React app to GitHub Pages"
 
 git add .
@@ -17,8 +19,6 @@ git add .
 git commit -m "Configure React app for deployment to GitHub Pages"
 
 git push origin main
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

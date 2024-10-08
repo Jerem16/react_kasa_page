@@ -1,6 +1,6 @@
 @mixin drop-shadow($colour) {
     filter: drop-shadow(4px 4px 4px $colour);
-    -webkit-filter: drop-shadow(4px 4px 4px  $colour);
+    -webkit-filter: drop-shadow(4px 4px 4px $colour);
 }
 /*** Animation::after ***/
 @mixin pseudo-pos {

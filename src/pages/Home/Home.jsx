@@ -1,4 +1,3 @@
-import React from "react";
 import BannerImage from "../../components/BannerImage/BannerImage";
 import HomeCardList from "../../components/HomeCardList/HomeCardList";
 import useBodyClass from "../useBodyClass";

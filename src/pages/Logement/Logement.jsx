@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import accommodations from "../../data/logements.json";
-import Error404 from "../Error404/Error404";
+import Error from "../../pages/Error/Error";
 import Collapse from "../../components/Collapse/Collapse";
 import Carousel from "../../components/Carousel/Carousel";
 import HostCard from "../../components/LodgingHost/LodgingHost";
@@ -17,7 +17,7 @@ function Logement() {
     );
 
     if (!logement) {
-        return <Error404 />;
+        return <Error />;
     }
 
     const rating = parseInt(logement.rating, 10);

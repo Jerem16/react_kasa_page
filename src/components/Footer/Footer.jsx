@@ -8,7 +8,7 @@ function Footer() {
             <div className="footer">
                 <img src={logo} alt="logo" className="footer_logo" />
                 <nav className="footer_nav">
-                    <Link to="/react_kasa_page" className="footer_nav-a">
+                    <Link to="/react_kasa_page/" className="footer_nav-a">
                         &#169; 2020 Kasa. All right reserved
                     </Link>
                 </nav>
